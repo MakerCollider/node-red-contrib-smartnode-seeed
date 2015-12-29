@@ -1,0 +1,66 @@
+{
+    "name":         "node-red-contrib-smartnode-seeed",
+    "version":      "1.0.0",
+    "keywords":     ["node-red",
+                     "node",
+                     "intel",
+                     "Edison",
+                     "SmartNode"
+                    ],
+    "dependencies": {
+        "Buffer": "*",
+        "mraa": ">=0.8.1",
+        "jsupm_grove": ">=0.4.1",
+        "jsupm_mg811": ">=0.4.1",
+        "jsupm_th02": ">=0.4.1",
+        "jsupm_rotaryencoder": ">=0.4.1",
+        "jsupm_grovemoisture": ">=0.4.1",
+        "jsupm_biss0001": ">=0.4.1",
+        "jsupm_loudness": ">=0.4.1",
+        "jsupm_guvas12d": ">=0.4.1",
+        "jsupm_buzzer": ">=0.4.1",
+        "jsupm_i2clcd": ">=0.4.1",
+        "jsupm_servo": ">=0.4.1",
+        "jsupm_ttp223": ">=0.4.1"
+        
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MakerCollider/node-red-contrib-smartnode-seeed.git"
+    },
+    
+    "node-red":     {
+        "nodes":{
+            "Brightness":       "seeed-grove-env/brightness/brightness.js",
+            "CO2Sensor":        "seeed-grove-env/co2/co2.js",
+            "GroveTempeture":   "seeed-grove-env/groveTemp/groveTemp.js",
+            "TemperatureHumidity": "seeed-grove-env/tempetureHumidity/temperatureHumidity.js",
+
+            "Encoder":          "seeed-grove-phy/encoder/encoder.js",
+            "Moisture":         "seeed-grove-phy/moisture/moisture.js",
+            "Motion":           "seeed-grove-phy/motion/motion.js",
+            "RotaryEncoder":    "seeed-grove-phy/rotaryEncoder/rotaryEncoder.js",
+            "Sound":            "seeed-grove-phy/sound/sound.js",
+            "UVSensor":         "seeed-grove-phy/uv/UV.js",
+            
+            "Blink":            "seeed-grove-ui/blink/blink.js",
+            "BreathLed":        "seeed-grove-ui/breathLed/breathLed.js",
+            "Button":           "seeed-grove-ui/button/button.js",
+            "Buzzer":           "seeed-grove-ui/buzzer/buzzer.js",
+            "Led":              "seeed-grove-ui/led/led.js",
+            "Relay":            "seeed-grove-ui/relay/relay.js",
+            "Screen":           "seeed-grove-ui/screen/screen.js",
+            "Servo":            "seeed-grove-ui/servo/servo.js",
+            "SlidePosition":    "seeed-grove-ui/slidePosition/slidePosition.js",
+            "Touch":            "seeed-grove-ui/touch/touch.js"
+        }
+    },
+    "author": {
+        "name": "Maker Collider SmartNode team"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MakerCollider/node-red-contrib-smartnode-seeed/issues"
+    },
+    "homepage": "https://github.com/MakerCollider/node-red-contrib-smartnode"
+}
