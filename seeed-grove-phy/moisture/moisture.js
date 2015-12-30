@@ -66,5 +66,5 @@ module.exports = function(RED) {
 		node.send(msg);
 	}
     }
-    RED.nodes.registerType("Moisture", moisture);
+    RED.nodes.registerType("Seeed-Moisture", moisture);
 }

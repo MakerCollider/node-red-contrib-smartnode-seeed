@@ -54,5 +54,5 @@ module.exports = function(RED){
     		node.send([msg, msg1]);
     	}
     }
-    RED.nodes.registerType("TemperatureHumidity", temperatureHumidity);
+    RED.nodes.registerType("Seeed-TemperatureHumidity", temperatureHumidity);
 }

@@ -76,5 +76,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("RotaryEncoder", rotaryEncoder);
+    RED.nodes.registerType("Seeed-RotaryEncoder", rotaryEncoder);
 }

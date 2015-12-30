@@ -70,5 +70,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("Sound", sound);
+    RED.nodes.registerType("Seeed-Sound", sound);
 }

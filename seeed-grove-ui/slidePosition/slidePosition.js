@@ -75,5 +75,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("SlidePosition", slidePosition);
+    RED.nodes.registerType("Seeed-SlidePosition", slidePosition);
 }

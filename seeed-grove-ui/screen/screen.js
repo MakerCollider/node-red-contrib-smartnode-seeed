@@ -59,5 +59,5 @@ module.exports = function(RED) {
             myLcd.clear();
         }); 
     }
-    RED.nodes.registerType("Screen", screen);
+    RED.nodes.registerType("Seeed-Screen", screen);
 }

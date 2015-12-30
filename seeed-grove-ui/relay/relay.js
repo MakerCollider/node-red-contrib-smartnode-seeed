@@ -65,5 +65,5 @@ module.exports = function(RED){
             checkPin.initDigitalPin();  //init pin
         });
     }
-    RED.nodes.registerType("Relay", relay);
+    RED.nodes.registerType("Seeed-Relay", relay);
 }

@@ -75,5 +75,5 @@ module.exports = function(RED){
     		node.send(msg);
     	}
     }
-    RED.nodes.registerType("Brightness", brightness);
+    RED.nodes.registerType("Seeed-Brightness", brightness);
 }

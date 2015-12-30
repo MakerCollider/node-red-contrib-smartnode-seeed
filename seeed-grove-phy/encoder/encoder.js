@@ -93,5 +93,5 @@ module.exports = function(RED){
             node.send(msg);
         }
     }
-    RED.nodes.registerType("Encoder", encoder);
+    RED.nodes.registerType("Seeed-Encoder", encoder);
 }

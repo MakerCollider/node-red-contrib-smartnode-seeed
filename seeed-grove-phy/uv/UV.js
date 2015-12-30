@@ -68,5 +68,5 @@ module.exports = function(RED) {
 		node.send(msg);
 	}
     }
-    RED.nodes.registerType("UV", sensorUV);
+    RED.nodes.registerType("Seeed-UV", sensorUV);
 }

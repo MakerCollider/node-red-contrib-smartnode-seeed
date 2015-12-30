@@ -73,6 +73,6 @@ module.exports = function(RED) {
     }
 
 
-    RED.nodes.registerType("BreathLed", breathLed);
+    RED.nodes.registerType("Seeed-BreathLed", breathLed);
 }
 

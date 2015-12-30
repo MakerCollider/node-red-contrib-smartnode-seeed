@@ -73,5 +73,5 @@ module.exports = function(RED){
             checkPin.initDigitalPin();  //init pin
         });
     }
-    RED.nodes.registerType("Buzzer", buzzer);
+    RED.nodes.registerType("Seeed-Buzzer", buzzer);
 }
