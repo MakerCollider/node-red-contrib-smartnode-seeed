@@ -15,7 +15,7 @@
  **/
 
 module.exports = function(RED){ 
-    var checkPin = require("../../extends/check_pin");
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
     var upm_grove = require("jsupm_grove");
     function rotaryEncoder(config) {
         RED.nodes.createNode(this, config);

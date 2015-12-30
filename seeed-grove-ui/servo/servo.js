@@ -14,7 +14,7 @@
  * limitations under the License.
  **/
 module.exports = function(RED) {
-    var checkPin = require("../../extends/check_pin");
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
     var servoModule =require("jsupm_servo");
     function GroveServo(config) {
         RED.nodes.createNode(this, config);

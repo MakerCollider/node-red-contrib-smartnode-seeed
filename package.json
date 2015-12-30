@@ -1,6 +1,6 @@
 {
     "name":         "node-red-contrib-smartnode-seeed",
-    "version":      "1.0.1",
+    "version":      "1.0.2",
     "keywords":     ["node-red",
                      "node",
                      "intel",
@@ -22,7 +22,6 @@
         "jsupm_i2clcd": ">=0.4.1",
         "jsupm_servo": ">=0.4.1",
         "jsupm_ttp223": ">=0.4.1"
-        
     },
     "repository": {
         "type": "git",

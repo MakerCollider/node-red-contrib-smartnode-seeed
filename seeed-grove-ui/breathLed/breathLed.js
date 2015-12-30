@@ -15,7 +15,7 @@
  **/
 
 module.exports = function(RED) {
-    var checkPin = require("../../extends/check_pin");
+    var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
     var m = require('mraa');
     function breathLed(config) {
         RED.nodes.createNode(this, config);
