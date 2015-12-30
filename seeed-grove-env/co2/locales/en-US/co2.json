@@ -3,5 +3,10 @@
         "label": {
             "palette": "CO2Sensor"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "Seeed_Grove_Env": "Seeed_Grove_ENV_Monitor"
+        }
+    }     
 }

@@ -3,5 +3,10 @@
         "label": {
             "palette": "舵机控制"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "Seeed_Grove_UI": "SeeedGrove用户接口模块"
+        }
+    }     
 }

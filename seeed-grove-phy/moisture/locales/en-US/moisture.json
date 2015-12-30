@@ -3,5 +3,10 @@
         "label": {
             "palette": "Moisture"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "Seeed_Grove_Phy": "Seeed_Grove_Physical_Monitor"
+        }
+    }     
 }

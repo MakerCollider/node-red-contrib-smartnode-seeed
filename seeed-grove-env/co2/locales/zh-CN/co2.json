@@ -3,5 +3,10 @@
         "label": {
             "palette": "CO2传感器"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "Seeed_Grove_Env": "SeeedGrove环境监控传感器"
+        }
+    }     
 }

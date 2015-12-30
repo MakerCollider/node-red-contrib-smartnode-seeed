@@ -3,5 +3,10 @@
         "label": {
             "palette": "声音传感器"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "Seeed_Grove_Phy": "SeeedGrove物理监测传感器"
+        }
+    }     
 }

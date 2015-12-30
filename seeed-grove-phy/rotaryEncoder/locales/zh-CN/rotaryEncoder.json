@@ -3,5 +3,10 @@
         "label": {
             "palette": "模拟编码器"
         }
-    }    
+    },
+    "palette": {
+        "label": {
+              "Seeed_Grove_Phy": "SeeedGrove物理监测传感器"
+        }
+    }     
 }
