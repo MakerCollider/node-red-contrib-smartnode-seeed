@@ -1,6 +1,6 @@
 {
     "name":         "node-red-contrib-smartnode-seeed",
-    "version":      "1.0.4",
+    "version":      "1.0.5",
     "keywords":     ["node-red",
                      "node",
                      "intel",
@@ -33,7 +33,7 @@
             "Brightness":       "seeed-grove-env/brightness/brightness.js",
             "CO2Sensor":        "seeed-grove-env/co2/co2.js",
             "GroveTempeture":   "seeed-grove-env/groveTemp/groveTemp.js",
-            "TemperatureHumidity": "seeed-grove-env/tempetureHumidity/temperatureHumidity.js",
+            "TemperatureHumidity": "seeed-grove-env/temperatureHumidity/temperatureHumidity.js",
 
             "Encoder":          "seeed-grove-phy/encoder/encoder.js",
             "Moisture":         "seeed-grove-phy/moisture/moisture.js",
