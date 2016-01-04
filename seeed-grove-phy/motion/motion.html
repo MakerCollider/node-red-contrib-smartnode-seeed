@@ -27,7 +27,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name || "Motion";
+            return this.name +' D' + this.digitalPin;
         },
         paletteLabel: function () {
             return this.name||this._("Motion.label.palette");

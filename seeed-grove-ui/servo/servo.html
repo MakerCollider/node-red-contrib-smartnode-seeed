@@ -25,7 +25,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name || "Servo";
+            return this.name +' D' + this.pwmPin;
         },
         paletteLabel: function () {
             return this.name||this._("Servo.label.palette");

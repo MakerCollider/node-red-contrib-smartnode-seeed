@@ -26,7 +26,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name || "RotaryEncoder";
+            return this.name +' A' + this.analogPin;
         },
         paletteLabel: function () {
             return this.name||this._("RotaryEncoder.label.palette");
