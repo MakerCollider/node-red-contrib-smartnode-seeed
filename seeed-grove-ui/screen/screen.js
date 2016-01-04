@@ -18,7 +18,7 @@ module.exports = function(RED) {
     var LCD = require("jsupm_i2clcd");
     function screen(config) {
         RED.nodes.createNode(this, config);
-	    this.R=config.R;
+        this.R=config.R;
         this.G=config.G;
         this.B=config.B;
         var node = this;
@@ -26,10 +26,12 @@ module.exports = function(RED) {
         node.R=node.R>>>0;
         node.G=node.G>>>0;
         node.B=node.B>>>0;
-		var myLcd = new LCD.Jhd1313m1 (0, 0x3E, 0x62);
-		myLcd.setColor(node.R,node.G,node.B); 
+        var myLcd = new LCD.Jhd1313m1 (6, 0x3E, 0x62);
+        myLcd.setColor(node.R,node.G,node.B);
+
         this.on('input', function(msg){
             var inputStr = String(msg.payload);
+            myLcd.clear();
             if(inputStr.length>16)
             {
                 console.log("too long");
@@ -55,6 +57,7 @@ module.exports = function(RED) {
                 myLcd.write(inputStr);
             }
         });
+
         this.on('close', function() {
             myLcd.clear();
         }); 
