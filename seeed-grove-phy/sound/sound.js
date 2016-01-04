@@ -66,7 +66,7 @@ module.exports = function(RED){
         {
             var celSound = sound.readFloat();
             if(celSound != 0){
-                var soundValue = 20 * Math.log(celSound / 0.0052) - 26;
+                var soundValue = 20 * Math.log(celSound *5 / 0.003)/Math.LN10 -50 + 94 - 49;
                 var msg = { payload: Math.round(soundValue) };
                 node.status({fill: "red", shape: "dot", text: "Sound value is " + Math.round(soundValue) + "dB"});
                 node.send(msg);
