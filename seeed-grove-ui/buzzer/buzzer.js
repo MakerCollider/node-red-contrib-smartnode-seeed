@@ -39,37 +39,50 @@ module.exports = function(RED){
             console.log('unknown pin' + node.pwmPin + ' key value' + checkPin.getDigitalPinValue(key));
             return;
         }
+        function setPwmto0(pin) {                                                                      
+            var mraa =require('mraa');                                                                 
+            var exec = require('child_process').exec;                                                  
+            var gpio = new mraa.Gpio(pin);                                                             
+            var cmd1 = "echo " + pin + " > /sys/class/gpio/unexport";                                  
+            var cmd2 = "echo " + pin + " > /sys/class/gpio/export";                                    
+            gpio.dir(mraa.DIR_OUT);                                                                    
+            exec(cmd1,0);                                                                              
+            gpio.write(0);                                                                             
+            exec(cmd2,0);                                                                              
+        }  
 
-        var myBuzzer = new upmBuzzer.Buzzer(node.pwmPin);
+        var myBuzzer;
         var myinterval;
         this.on('input',function(msg) {
             console.log("msg:" + msg.payload);
-        	if (msg.payload == 1){
-                    console.log("tone:" + node.tone);                                                      
-                    if (node.tone == 1)                                                                    
-                        myBuzzer.playSound(upmBuzzer.DO, 0);                                     
-                    if (node.tone == 2)                                                                    
-                        myBuzzer.playSound(upmBuzzer.RE, 0);                                     
-                    if (node.tone == 3)                                                                    
-                        myBuzzer.playSound(upmBuzzer.MI, 0);                                     
-                    if (node.tone == 4)                                                                    
-                        myBuzzer.playSound(upmBuzzer.FA, 0);                                     
-                    if (node.tone == 5)                                                                    
-                        myBuzzer.playSound(upmBuzzer.SOL, 0);                                    
-                    if (node.tone == 6)                                                                    
-                        myBuzzer.playSound(upmBuzzer.LA, 0);                                     
-                    if (node.tone == 7)                                                                    
-                        myBuzzer.playSound(upmBuzzer.SI, 0); 
-                    if (node.tone > 7 || node.tone < 1)                
-                        node.status({fill: "red", shape: "ring", text: "please check the tone value"});
-                    var msg = { payload:1 };
-            	    node.send(msg);
-        	}
-                else {
-                    myBuzzer.stopSound();
-                    var msg = { payload:0 };
-                    node.send(msg);
-        	}
+            myBuzzer = new upmBuzzer.Buzzer(node.pwmPin);
+            if (msg.payload == 1){
+                console.log("tone:" + node.tone);                                                      
+                if (node.tone == 1)                                                                    
+                    myBuzzer.playSound(upmBuzzer.DO, 0);                                     
+                if (node.tone == 2)                                                                    
+                    myBuzzer.playSound(upmBuzzer.RE, 0);                                     
+                if (node.tone == 3)                                                                    
+                    myBuzzer.playSound(upmBuzzer.MI, 0);                                     
+                if (node.tone == 4)                                                                    
+                    myBuzzer.playSound(upmBuzzer.FA, 0);                                     
+                if (node.tone == 5)                                                                    
+                    myBuzzer.playSound(upmBuzzer.SOL, 0);                                    
+                if (node.tone == 6)                                                                    
+                    myBuzzer.playSound(upmBuzzer.LA, 0);                                     
+                if (node.tone == 7)                                                                    
+                    myBuzzer.playSound(upmBuzzer.SI, 0); 
+                if (node.tone > 7 || node.tone < 1)                
+                    node.status({fill: "red", shape: "ring", text: "please check the tone value"});
+                var msg = { payload:1 };
+                node.send(msg);
+            }
+            else {
+                myBuzzer.stopSound();
+                setPwmto0(node.pwmPin);   
+                var msg = { payload:0 };
+                node.send(msg);
+            }
         });
         this.on('close', function() {
             clearInterval(myinterval);
