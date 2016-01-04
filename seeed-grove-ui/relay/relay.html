@@ -26,7 +26,7 @@
         outputs: 0,
         icon: "light.png",
         label: function() {
-            return this.name || "Relay";
+            return this.name +' D' + this.digitalPin;
         },
         paletteLabel: function () {
             return this.name||this._("Relay.label.palette");

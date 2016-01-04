@@ -26,7 +26,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name || "Sound";
+            return this.name +' A' + this.analogPin;
         },
         paletteLabel: function () {
             return this.name||this._("Sound.label.palette");

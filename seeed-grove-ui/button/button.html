@@ -26,7 +26,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name || "Button";
+            return this.name +' D' + this.digitalPin;
         },
         paletteLabel: function () {
             return this.name||this._("Button.label.palette");

@@ -27,7 +27,7 @@
         outputs: 0,
         icon: "light.png",
         label: function() {
-            return this.name || "BreathLed";
+            return this.name +' D' + this.pwmPin;
         },
         paletteLabel: function () {
             return this.name||this._("BreathLed.label.palette");
