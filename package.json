@@ -42,11 +42,7 @@
             "Sound":            "seeed-grove-phy/sound/sound.js",
             "UVSensor":         "seeed-grove-phy/uv/UV.js",
             
-            "Blink":            "seeed-grove-ui/blink/blink.js",
-            "BreathLed":        "seeed-grove-ui/breathLed/breathLed.js",
-            "Button":           "seeed-grove-ui/button/button.js",
             "Buzzer":           "seeed-grove-ui/buzzer/buzzer.js",
-            "Led":              "seeed-grove-ui/led/led.js",
             "Relay":            "seeed-grove-ui/relay/relay.js",
             "Screen":           "seeed-grove-ui/screen/screen.js",
             "Servo":            "seeed-grove-ui/servo/servo.js",
