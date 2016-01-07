@@ -15,7 +15,7 @@
  **/
 module.exports = function(RED){ 
     var checkPin = require("node-red-contrib-smartnode/extends/check_pin"); 
-    var mraa = require("mraa");
+    var mraa = require("mraa-makercollider");
     function sound(config) {
         RED.nodes.createNode(this, config);
         this.analogPin = config.analogPin;

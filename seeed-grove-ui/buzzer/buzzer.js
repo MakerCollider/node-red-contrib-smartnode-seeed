@@ -40,7 +40,7 @@ module.exports = function(RED){
             return;
         }
         function setPwmto0(pin) {                                                                      
-            var mraa =require('mraa');                                                                 
+            var mraa =require("mraa-makercollider");                                                                 
             var exec = require('child_process').exec;                                                  
             var gpio = new mraa.Gpio(pin);                                                             
             var cmd1 = "echo " + pin + " > /sys/class/gpio/unexport";                                  

@@ -1,6 +1,6 @@
 {
     "name":         "node-red-contrib-smartnode-seeed",
-    "version":      "1.0.7",
+    "version":      "1.0.8",
     "keywords":     ["node-red",
                      "node",
                      "intel",
@@ -9,7 +9,7 @@
                     ],
     "dependencies": {
         "Buffer": "*",
-        "mraa": ">=0.8.1",
+        "mraa-makercollider": ">=0.0.3",
         "jsupm_grove": ">=0.4.1",
         "jsupm_mg811": ">=0.4.1",
         "jsupm_th02": ">=0.4.1",
