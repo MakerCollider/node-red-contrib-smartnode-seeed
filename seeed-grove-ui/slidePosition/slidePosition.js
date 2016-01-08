@@ -16,7 +16,7 @@
 
 module.exports = function(RED){ 
     var checkPin = require("node-red-contrib-smartnode/extends/check_pin");
-    var gpio = require("mraa-makercollider");
+    var gpio = require("mraa");
     function slidePosition(config) {
         RED.nodes.createNode(this, config);
         this.analogPin = config.analogPin;

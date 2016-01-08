@@ -1,6 +1,6 @@
 {
     "name":         "node-red-contrib-smartnode-seeed",
-    "version":      "1.0.8",
+    "version":      "1.0.9",
     "keywords":     ["node-red",
                      "node",
                      "intel",
@@ -8,20 +8,7 @@
                      "SmartNode"
                     ],
     "dependencies": {
-        "Buffer": "*",
-        "mraa-makercollider": ">=0.0.3",
-        "jsupm_grove": ">=0.4.1",
-        "jsupm_mg811": ">=0.4.1",
-        "jsupm_th02": ">=0.4.1",
-        "jsupm_rotaryencoder": ">=0.4.1",
-        "jsupm_grovemoisture": ">=0.4.1",
-        "jsupm_biss0001": ">=0.4.1",
-        "jsupm_loudness": ">=0.4.1",
-        "jsupm_guvas12d": ">=0.4.1",
-        "jsupm_buzzer": ">=0.4.1",
-        "jsupm_i2clcd": ">=0.4.1",
-        "jsupm_servo": ">=0.4.1",
-        "jsupm_ttp223": ">=0.4.1"
+        "Buffer": "*"
     },
     "repository": {
         "type": "git",
