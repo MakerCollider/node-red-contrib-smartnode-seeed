@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "Seeed_Grove_Phy": "SeeedGrove物理监测传感器"
+              "Seeed_Grove_Phy": "Grove物理传感"
         }
     }     
 }

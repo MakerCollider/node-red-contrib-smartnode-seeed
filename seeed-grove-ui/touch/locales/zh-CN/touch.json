@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "Seeed_Grove_UI": "SeeedGrove用户接口模块"
+              "Seeed_Grove_UI": "Grove用户接口模块"
         }
     }     
 }

@@ -1,12 +1,12 @@
 {
     "GroveTemperature": {
         "label": {
-            "palette": "Grove温度传感器"
+            "palette": "Grove温度传感"
         }
     },
     "palette": {
         "label": {
-              "Seeed_Grove_Env": "SeeedGrove环境监控传感器"
+              "Seeed_Grove_Env": "Grove环境传感"
         }
     }     
 }
