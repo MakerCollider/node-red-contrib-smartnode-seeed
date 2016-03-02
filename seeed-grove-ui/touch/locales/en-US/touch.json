@@ -6,7 +6,7 @@
     },
     "palette": {
         "label": {
-              "Seeed_Grove_UI": "Seeed_Grove_User_Interface"
+              "Seeed_Grove": "Seeed_Grove"
         }
     }     
 }
