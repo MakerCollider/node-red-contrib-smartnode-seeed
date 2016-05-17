@@ -15,33 +15,33 @@
 -->
 
 <script type="text/x-red" data-help-name="Seeed-SlidePosition">
-<h3 id="旋转角度传感节点">旋转角度传感节点</h3>
+<h3 id="Angle of rotation sensor node">Angle of rotation sensor node</h3>
 
-<p>本节点表示grove套件的旋转角度传感模块。</p>
+<p>This node represents the angle of rotation sensor module in the "grove" suite.</p>
 
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>Analog Pin：数字引脚</li>
-<li>Interval：输出时间间隔</li>
+<li>Name：Name of the node.</li>
+<li>Analog Pin：Analog Pin.</li>
+<li>Interval：Time interval of output.</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：开关量</li>
+<li>msg.payload：Switching value</li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output">Output</h4>
 
 <ol>
-<li>msg.payload：旋转角度值</li>
+<li>msg.payload：Value of rotation angle</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数，<code>msg.payload</code>为1时，每隔Interval时间输出一次当前角度值，<code>msg.payload</code>为0时，停止输出角度值。</li>
+<li>Set up all the parameters' configuration properly. When<code>msg.payload</code>equals 1，output current angle value every Interval time. When<code>msg.payload</code>equals 0，stop outputting angle value. </li>
 </ol>
 </script>

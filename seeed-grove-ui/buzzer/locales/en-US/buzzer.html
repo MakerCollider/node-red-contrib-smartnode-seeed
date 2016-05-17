@@ -1,4 +1,4 @@
-<!--
+﻿<!--
   Copyright 2015 Maker Collider
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,36 +13,41 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
+<script type="text/x-red" data-help-name="file">
+<h3 id="Write file node">Write file node</h3>
 
-<script type="text/x-red" data-help-name="Seeed-Buzzer">
-<h3 id="蜂鸣器节点">蜂鸣器节点</h3>
+<p>This node writes the <b> msg.payload </ b> to the specified file.For example, create a log.</p>
 
-<p>本节点表示grove套件的蜂鸣器模块。</p>
-
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>PWM Pin：PWM引脚</li>
-<li>Tone(1~7)：音调，范围为1~7</li>
+<li>Filename：Name of the file you want to write。If empty, the node will use the specified filename in the <b> msg.filename </ b> as filename.</li>
+<li>Action：action。<b>append to file</b>:default action. Appended to the end of the file that has already exist.<b>overwrite file</b>: overwrite file each time. For example, if you want to output a "static" web page or report, use this action.<b>delete file</b>:delete a file. <i>Note:</i> The use of msg.delete has been abandoned。</li>
+<li>Add newline (\n) to each payload?：Whether or not to add newline (\n) to each payload</li>
+<li>Create directory if it doesn't exist?: If the directory does't exist, create it or not. </li>
+<li>Name：Name of the node</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：输入1或者0，1表示打开，0表示关闭</li>
+<li>msg.payload：Input </li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output">Output</h4>
 
 <ol>
-<li>msg.payload：输出1或者0，1表示蜂鸣器响，0表示蜂鸣器关闭</li>
+<li>Null</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数，选择蜂鸣器发出的音调。</li>
-<li>当输入<code>msg.payload</code>为1时，蜂鸣器响，蜂鸣器节点输出<code>msg.payload</code>为1，当输入<code>msg.payload</code>为0时，蜂鸣器关，蜂鸣器节点输出<code>msg.payload</code>为0。</li>
+<li>Configure all the parameters properly.</li>
+<li>When input<code>msg.payload</code>，the node manipulate the file with the specific faction.
+</li>
 </ol>
 </script>
+
+

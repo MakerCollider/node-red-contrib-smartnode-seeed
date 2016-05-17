@@ -1,4 +1,4 @@
-<!--
+﻿<!--
   Copyright 2015 Maker Collider
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,33 +15,33 @@
 -->
 
 <script type="text/x-red" data-help-name="Seeed-GroveTemperature">
-<h3 id="温度传感节点">温度传感节点</h3>
+<h3 id="Temperature sensor node">Temperature sensor node</h3>
 
-<p>本节点表示grove套件的温度传感模块。</p>
+<p>This node represents the temperature sensor module in the "grove" suite. </p>
 
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>Analog Pin：模拟引脚</li>
-<li>Interval：输出时间间隔</li>
+<li>Name：Name of the node</li>
+<li>Analog Pin：Analog Pins</li>
+<li>Interval：Output time interval</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：开关量</li>
+<li>msg.payload：Switching value</li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output">Output</h4>
 
 <ol>
-<li>msg.payload：当前温度值</li>
+<li>msg.payload：Current temperature value</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数，<code>msg.payload</code>为1时，每隔Interval时间，输出一次当前温度值，<code>msg.payload</code>为0时，停止输出温度值。</li>
+<li>Set up all the parameters' configuration properly. When the value <code>msg.payload</code>equals 1，the node output current temperature at each time interval. When the value <code>msg.payload</code>equals 0，stop outputting any value。</li>
 </ol>
 </script>

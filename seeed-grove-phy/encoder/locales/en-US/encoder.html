@@ -1,4 +1,4 @@
-<!--
+﻿<!--
   Copyright 2015 Maker Collider
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,35 +15,35 @@
 -->
 
 <script type="text/x-red" data-help-name="Seeed-Encoder">
-<h3 id="编码器节点">编码器节点</h3>
+<h3 id="Encoder Node">Encoder Node</h3>
 
-<p>本节点为两个数字引脚的编码器，可以输出当前旋转值。</p>
+<p>This node is an encoder for two digital pins.It can output the current rotary value. </p>
 
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>Digital PinA：数字引脚A</li>
-<li>Digital PinB：数字引脚B</li>
-<li>Interval：定时器触发时间间隔</li>
+<li>Name：Name of the node</li>
+<li>Digital PinA：Digital pin A</li>
+<li>Digital PinB：Digital pin B</li>
+<li>Interval：Time interval to trigger the timer</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：开关量</li>
+<li>msg.payload：Switching value</li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output">Output</h4>
 
 <ol>
-<li>msg.payload：编码位置信息</li>
+<li>msg.payload：Encoding position information</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数。</li>
-<li>使用时，当输入<code>msg.payload</code>为1时。表示打开编码传感节点，节点会每个<code>Interval</code>时间间隔输出当前旋转值；例如转一圈就是20，在转一圈就是40，否则，关闭编码传感节点，停止输出。</li>
+<li>Set up all the parameters' configuration properly.</li>
+<li>When the input,<code>msg.payload</code>,equals 1, it means turn on the encoder sensor node. The node will automatically output current rotary value every<code>Interval</code>time；For example, one round output 20，another round output 40.In other cases, the node close and output nothing.</li>
 </ol>
 </script>

@@ -1,4 +1,4 @@
-<!--
+﻿<!--
   Copyright 2015 Maker Collider
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,33 +15,33 @@
 -->
 
 <script type="text/x-red" data-help-name="Seeed-Brightness">
-<h3 id="光传感器节点">光传感器节点</h3>
+<h3 id="Brightness sensor node">Brightness sensor node</h3>
 
-<p>本节点表示grove套件的光传感器模块。</p>
+<p>This node represents the brightness sensor module in the "grove" suite.</p>
 
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>Analog Pin：模拟引脚</li>
-<li>Interval：输出时间间隔，单位为ms</li>
+<li>Name：Name of the node</li>
+<li>Analog Pin：Analog pins</li>
+<li>Interval：Time interval in ms</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：开关量</li>
+<li>msg.payload：Switching value</li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output value">Output value</h4>
 
 <ol>
-<li>msg.payload：光照强度，单位为lux</li>
+<li>msg.payload：Light intensity，in unit lux</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数，<code>msg.payload</code>为1时，每隔Interval时间，输出一次光照强度值，<code>msg.payload</code>为0时，停止输出光照强度值。</li>
+<li>Set up all the parameters' configuration properly.When the input value <code>msg.payload</code> equals 1，the node output light intensity at each time interval.When the input value <code>msg.payload</code>equals 0，stop outputting value.</li>
 </ol>
 </script>

@@ -15,32 +15,32 @@
 -->
 
 <script type="text/x-red" data-help-name="Seeed-Servo">
-<h3 id="旋转角度传感节点">旋转角度传感节点</h3>
+<h3 id="Rotate Servo">Rotate Servo</h3>
 
-<p>本节点表示grove套件的旋转角度传感模块。</p>
+<p>This node represents the Servo module in the "grove" suite.</p>
 
-<h4 id="参数配置">参数配置</h4>
+<h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Name：节点名称</li>
-<li>PWM Pin：PWM引脚</li>
+<li>Name：Name of the node.</li>
+<li>PWM Pin：PWM Pin.</li>
 </ol>
 
-<h4 id="输入量">输入量</h4>
+<h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：舵机旋转角度，范围为0~150度</li>
+<li>msg.payload：The angle of the servo's rotation. Range from 0 to 150 degree.</li>
 </ol>
 
-<h4 id="输出量">输出量</h4>
+<h4 id="Output">Output</h4>
 
 <ol>
-<li>msg.payload：舵机旋转角度</li>
+<li>msg.payload：The angle of servo's current rotation.</li>
 </ol>
 
-<h4 id="使用方法">使用方法</h4>
+<h4 id="Usage">Usage</h4>
 
 <ol>
-<li>配置好节点的每个参数，输入<code>msg.payload</code>表示舵机旋转角度，舵机会根据输入角度旋转，并通过输出msg.payload输出当前角度。</li>
+<li>Set up all the parameters' configuration properly. The input,<code>msg.payload</code>,represents the angle of servo's rotation.Servo will rotate according to the input，then ouput current rotation angle through<code>msg.payload</code></li>
 </ol>
 </script>
