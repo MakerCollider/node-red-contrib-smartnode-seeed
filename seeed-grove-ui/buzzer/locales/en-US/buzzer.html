@@ -13,31 +13,29 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<script type="text/x-red" data-help-name="file">
-<h3 id="Write file node">Write file node</h3>
+<script type="text/x-red" data-help-name="Seeed-Buzzer">
+<h3 id="Seeed-Buzzer node">Seeed-Buzzer node</h3>
 
-<p>This node writes the <b> msg.payload </ b> to the specified file.For example, create a log.</p>
+<p>The node represents buzzer module grove suite.</p>
 
 <h4 id="Parameter Configuration">Parameter Configuration</h4>
 
 <ol>
-<li>Filename：Name of the file you want to write。If empty, the node will use the specified filename in the <b> msg.filename </ b> as filename.</li>
-<li>Action：action。<b>append to file</b>:default action. Appended to the end of the file that has already exist.<b>overwrite file</b>: overwrite file each time. For example, if you want to output a "static" web page or report, use this action.<b>delete file</b>:delete a file. <i>Note:</i> The use of msg.delete has been abandoned。</li>
-<li>Add newline (\n) to each payload?：Whether or not to add newline (\n) to each payload</li>
-<li>Create directory if it doesn't exist?: If the directory does't exist, create it or not. </li>
-<li>Name：Name of the node</li>
+<li>Name : The node name</li>
+<li>PWM Pin : Pulse Width Modulation Pin</li>
+<li>Tone(1~7) : Tone, ranging from 1 to 7</li>
 </ol>
 
 <h4 id="Input">Input</h4>
 
 <ol>
-<li>msg.payload：Input </li>
+<li>msg.payload：Input 1 or 0, 1 is open, 0 is closed</li>
 </ol>
 
 <h4 id="Output">Output</h4>
 
 <ol>
-<li>Null</li>
+<li>Output 1 or 0, 1 means buzzer on, 0 means Buzzer Off</li>
 </ol>
 
 
@@ -45,7 +43,7 @@
 
 <ol>
 <li>Configure all the parameters properly.</li>
-<li>When input<code>msg.payload</code>，the node manipulate the file with the specific faction.
+<li>When the input <code> msg.payload </ code> is 1, the butter on, and buzzer outputs <code> msg.payload </ code> 1. When the input <code> msg.payload </ code > is 0, the buzzer off, the buzzer outputs <code> msg.payload </ code> to 0.
 </li>
 </ol>
 </script>
