@@ -47,7 +47,7 @@ module.exports = function(RED){
             //use 'injector' node and pass string to control virtual node
             var payload = msg.payload>>>0;
             console.log("recv msg: " + payload);
-            if (payload) {
+            if ((msg.payload === "toggle") || (msg.payload == 1)) {
                 //switch on
                 if (is_on == false) {
                     is_on = true;
