@@ -15,33 +15,33 @@
 -->
 
 <script type="text/x-red" data-help-name="Seeed-CO2Sensor">
-<h3 id="旋转角度传感节点">旋转角度传感节点</h3>
+<h3 id="二氧化碳传感器节点">二氧化碳传感器节点</h3>
 
-<p>本节点表示grove套件的旋转角度传感模块。</p>
+<p>本节点表示Seeed套件的二氧化碳传感模块。</p>
 
 <h4 id="参数配置">参数配置</h4>
 
 <ol>
 <li>Name：节点名称</li>
-<li>Analog Pin：数字引脚</li>
+<li>Analog Pin：模拟引脚</li>
 <li>Interval：输出时间间隔</li>
 </ol>
 
 <h4 id="输入量">输入量</h4>
 
 <ol>
-<li>msg.payload：开关量</li>
+<li>msg.payload：开关量。</li>
 </ol>
 
 <h4 id="输出量">输出量</h4>
 
 <ol>
-<li>msg.payload：旋转角度值</li>
+<li>msg.payload：CO2浓度值。</li>
 </ol>
 
 <h4 id="使用方法">使用方法</h4>
 
 <ol>
-<li>配置好节点的每个参数，<code>msg.payload</code>为1时，每隔Interval时间输出一次当前角度值，<code>msg.payload</code>为0时，停止输出角度值。</li>
+<li>配置好节点的每个参数。节点每隔Interval时间输出当前CO2浓度。使用此节点时，Edison必须外接供电（7.5V-9V），否则会造成数据不准。</li>
 </ol>
 </script>
