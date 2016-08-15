@@ -18,7 +18,7 @@
         category: 'Seeed_Grove',
         color: '#E2D96E',
         defaults: {
-            name: {value: "Buzzer", required: false},
+            name: {value: "", required: false},
             pwmPin: {value: "3", required: false},
             tone: {value:"1",required: false}
         },
@@ -26,7 +26,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' D' + this.pwmPin;
+            return (this.name||this._("Buzzer.label.palette")) +' D' + this.pwmPin;
         },
         paletteLabel: function () {
             return this.name||this._("Buzzer.label.palette");

@@ -19,7 +19,7 @@
         category: 'Seeed_Grove',
         color: '#E2D96E',
         defaults: {
-            name: {value: "Touch", required: false},
+            name: {value: "", required: false},
             digitalPin: {value: "2", required: false},
             impulse: {value: "500", required: false}
         },
@@ -27,7 +27,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' D' + this.digitalPin;
+            return (this.name||this._("Touch.label.palette")) +' D' + this.digitalPin;
         },
         paletteLabel: function () {
             return this.name||this._("Touch.label.palette");

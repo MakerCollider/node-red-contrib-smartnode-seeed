@@ -19,7 +19,7 @@
         category: 'Seeed_Grove',
         color: '#E2D96E',
         defaults: {
-            name: {value: "Encoder", required: false},
+            name: {value: "", required: false},
             digitalPinA: {value: "2", required: false},
             digitalPinB: {value: "3", required: false},
             interval: {value: "500", required: false}
@@ -28,7 +28,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' D' + this.digitalPinA + ',D' + this.digitalPinB;
+            return (this.name||this._("Encoder.label.palette")) +' D' + this.digitalPinA + ',D' + this.digitalPinB;
         },
         paletteLabel: function () {
             return this.name||this._("Encoder.label.palette");

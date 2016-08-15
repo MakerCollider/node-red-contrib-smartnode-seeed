@@ -19,7 +19,7 @@
         category: 'Seeed_Grove',
         color: '#E2D96E',
         defaults: {
-            name: {value: "GroveTemperature", required: false},
+            name: {value: "", required: false},
             analogPin: {value: "0", required: false},
             interval: {value: "1000", required: false}
         },
@@ -27,7 +27,7 @@
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' A' + this.analogPin;
+            return (this.name||this._("GroveTemperature.label.palette")) +' A' + this.analogPin;
         },
         paletteLabel: function () {
             return this.name||this._("GroveTemperature.label.palette");

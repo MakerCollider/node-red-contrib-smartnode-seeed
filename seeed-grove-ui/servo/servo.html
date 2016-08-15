@@ -18,14 +18,14 @@
         category: 'Seeed_Grove',
         color: '#E2D96E',
         defaults: {
-            name: {value: "Servo", required: false},
+            name: {value: "", required: false},
             pwmPin: {value: "3", required: true},
         },
         inputs: 1,
         outputs: 1,
         icon: "light.png",
         label: function() {
-            return this.name +' D' + this.pwmPin;
+            return (this.name||this._("Servo.label.palette")) +' D' + this.pwmPin;
         },
         paletteLabel: function () {
             return this.name||this._("Servo.label.palette");

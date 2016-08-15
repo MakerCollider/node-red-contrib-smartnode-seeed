@@ -19,7 +19,7 @@
         category: 'Seeed_Grove',
         color: '#E2D96E',
         defaults: {
-            name: {value: "Screen", required: false},
+            name: {value: "", required: false},
 			R:{value:"255",required:true},
 			G:{value:"255",required:true},
 			B:{value:"255",required:true},
@@ -28,7 +28,7 @@
         outputs: 0,
         icon: "light.png",
         label: function() {
-            return this.name || "Screen";
+            return this.name || this._("Screen.label.palette");
         },
         paletteLabel: function () {
             return this.name||this._("Screen.label.palette");
